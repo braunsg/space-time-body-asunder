@@ -1,0 +1,104 @@
+<div id="wrapper">
+	<div id="header">
+		<div id="title_block">
+			<div class="title"><i>Space</i>, <i>Time</i>, and the <i>Body Asunder</i></div>
+			<div class="subtitle">Mapping the Voices of the Hiroshima Archive</div>
+		</div>
+		<div id="navigation_block">
+			<div class="navigation_item"><a href="#about">About</a></div>
+			<div class="navigation_item"><a href="#data">Data</a></div>
+			<div class="navigation_item"><a href="#acknowledgments">Acknowledgments</a></div>
+			<div class="navigation_item"><a href="index.php?lang=jp">日本語</a></div>
+		</div>
+	
+	</div>
+	<div class="vis_nav" id="main_vis_nav">
+		<div class="toggle_sort" id="toggle_sort_main">Toggle Sorting</div>
+		<div id="main_nav_svg" class="nav_svg"></div>
+	</div>
+	<div id="main_vis">
+		<div class='loading'><img src='inc/data-loading.gif'></div>
+	</div>
+
+<div id="content_wrapper">
+	<div id="scroll_instructions"><span id="scroll_up">&uarr;</span> <i>Scroll inside the visualization to see more</i> <span id="scroll_down">&darr;</span></div>
+	<a name="about" href=""></a>
+	<div class="page_division">The Hiroshima Archive and Voices of Hibakusha</div>
+	<div class="content_row">
+		<div class="content_section">
+			<div class="text_block">On August 6, 1945, the United States dropped an atomic bomb on the city of Hiroshima, Japan. A few days later, on August 9, another atomic bomb was dropped on the city of Nagasaki. At least 129,000 people died in direct line of these attacks, with several hundreds of thousands more dying in the aftermath.
+			</div>
+			<div class="text_block">These events in history are a painful reminder of the delicacy of the human race in a world that struggles towards peace in the face of constant warfare and conflict. In an effort to maintain open dialogue on the importance of nuclear disarmament on the path to peace and understanding, the <a target="_blank" href="http://hiroshima.archiving.jp/index_jp.html">Hiroshima Archive</a> aims to preserve the voices of <i>hibakusha</i> (被爆者), those who directly witnessed, experienced, and survived the effects of the atomic bomb in Hiroshima. This visualization seeks to raise those voices further and share the power of their testament to a larger narrative that is intimate to each and every one of us as human beings &mdash; one that is about space, time, and the human body's place in both.
+			</div>
+			<div class="text_block">
+				In this visualization, the text of each testimonial has been mapped and semantically categorized, providing a high-level visual representation of common themes of experience presented in each. Each column of blocks represents the text of a single interview from the Archive, and each block represents one word in that text. These blocks are colored according to the categories indicated in the key above the visualization; by hovering over an individual block, you can see the word represented. Clicking on a single block highlights all other instances of that specific word across all the interview texts. Likewise, clicking on one of the category names in the legend above highlights all words in that category. Click <b>Toggle Sorting</b> to sort each interview by word category. Finally, scroll inside the visualization to view the entire length of a given interview. For more information about the data analysis performed to create this visualization, refer to the section <i>Data Analysis</i> below.
+			</div>
+			<div class="text_block">
+				Here, we provide more discussion on four themes highlighted in this visualization of particular interest: the human body, space and place, time, and the physical world.
+			</div>
+			<div class="vis_nav" id="treemap_vis_nav">
+				<div class="toggle_sort" id="toggle_sort_treemap">Toggle Sorting</div>
+				<div id="treemap_nav_svg" class="nav_svg"></div>		
+			</div>
+			<div id="treemap_vis"><div class="loading"><img src="inc/data-loading.gif"></div></div>
+			<div class="special_tk_row">
+				<div class="special_tk_descr" id="special_tk_body">
+					<div class="section_subheader">The Body</div>
+					<div class="text_block">
+						The interviews presented in the Archive tell a narrative of the human body torn asunder. Throughout these texts, survivors make many references to the body &mdash; <i>eyes</i>, <i>faces</i>, <i>voices</i>, and <i>hands</i> &mdash; reflecting the physical toll of the bombing on those who lived in Hiroshima at that time. These effects were not limited to the bomb itself; well after, the effects of radiation exposure and bodily burns raised the death toll even higher.
+					</div>
+					<div class="text_block">
+						The large amount of language used to refer to the body is a reminder of the fragility of that which we often take for granted as being whole and complete. At the same time, however, they offer a mosaic of physical experience that reintegrates the experience of the self, even when that self is disintegrated by way of warfare.
+					</div>
+				</div>
+				<div class="special_tk_descr" id="special_tk_space">
+					<div class="section_subheader">Spaces and Places</div>
+					<div class="text_block">
+						Perhaps unsurprisingly, there are many references to spaces and places in the interview texts. Some of the most frequent words in this category point to an experience of the bombing in space that is as ubiquitous as that of the human body, including <i>inside</i>, <i>outside</i>, <i>up</i>, and <i>down</i>. The dropping of the atomic bomb was a universal experience, one that left no space untouched.
+					</div>
+				</div>
+			</div>
+			<div class="special_tk_row">
+				<div class="special_tk_descr" id="special_tk_time">
+					<div class="section_subheader">Time</div>
+					<div class="text_block">
+						The interviews show that for survivors, the dropping of the atomic bomb on Hiroshima is an event that occupies a very specific place and time in one's memory. In addition to language about the spatial extent of the bombing, these interviews also include plenty of language about <i>hours</i>, <i>days</i>, and <i>months</i>.
+					</div>
+				</div>
+				<div class="special_tk_descr" id="special_tk_physic">
+					<div class="section_subheader">The Physical World</div>
+					<div class="text_block">
+						Finally, it is impossible to ignore the degree to which the interviews in the Archive make reference to the physical world, both at the time of the attack as well as immediately after. These words include <i>atomic bomb</i>, <i>water</i>, <i>earth</i>, <i>fire</i>, and <i>sound</i>.
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<a name="data" href=""></a>
+	<div class="page_division">Data Analysis</div>
+	<div class="content_row">
+		<div class="content_section">
+			<div class="section_header">The Data</div>
+			<div class="text_block">
+				The complete texts of all interview materials collected in the Archive were tokenized (split into individual word chunks) using the <a target="_blank" href="http://developer.yahoo.co.jp/webapi/jlp/ma/v1/parse.html">Yahoo! Japan Morphological Analysis (日本語形態素解析) API</a>. The returned results were subsequently analyzed to identify high frequency words in these interviews, excluding particles and other non-substantive tokens. The top ~300 highest-frequency words were then classed into one of several possible categories: the body, time, space, the physical world, people, places, events, ideas, and things.
+			</div>	
+			<div class="section_header">The Visualization</div>
+			<div class="text_block">
+				In this visualization, each column of blocks represents the text of a single distinct interview. In each column, a single block represents one token (word) in the sequence of words of the original interview. Each block is colored according to the categories indicated above. For each interview, only <i>categorized</i> words are displayed &mdash; any given column does not portray blocks for <i>all</i> words, which includes particles, pronouns, and all other words that fell outside the top 300 highest-frequency tokens, in the respective interview.
+			</div>	
+		</div>	
+	</div>
+	<a name="acknowledgments" href=""></a>
+	<div class="page_division">More Information</div>	
+	<div class="content_row">
+		<div class="content_section">
+			<div class="section_header">Acknowledgments</div>
+			<div class="text_block">
+			The <a target="_blank" href="http://hiroshima.archiving.jp/index_jp.html">Hiroshima Archive</a> is principally guided under the direction of Dr. Hidenori Watanave, Associate Professor, Faculty of System Design at Tokyo Metropolitan University.	You can learn more about the Archive <a target="_blank" href="http://hiroshima.mapping.jp/index_jp.html">here (日本語)</a> and <a target="_blank" href="http://hiroshima.mapping.jp/index_en.html">here (English)</a>. Data analysis and the design of this visualization was done by <a target="_blank" href="http://www.stevengbraun.com">Steven Braun</a>. The source code for this visualization is available on <a target="_blank" href="http://www.github.com/braunsg">GitHub</a>.	
+			</div>
+		</div>
+	</div>
+</div> <!-- end content_wrapper -->
+
+</div> <!-- end wrapper -->

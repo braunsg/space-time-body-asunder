@@ -1,0 +1,102 @@
+<div id="wrapper">
+	<div id="header">
+		<div id="title_block">
+			<div class="title"><i>Space</i>, <i>Time</i>, and the <i>Body Asunder</i></div>
+			<div class="subtitle">Mapping the Voices of the Hiroshima Archive</div>
+		</div>
+		<div id="navigation_block">
+			<div class="navigation_item"><a href="#about">この可視化について</a></div>
+			<div class="navigation_item"><a href="#data">データ</a></div>
+			<div class="navigation_item"><a href="#acknowledgments">承認と感謝</a></div>
+			<div class="navigation_item"><a href="index.php?lang=en">English</a></div>
+		</div>
+	
+	</div>
+	<div class="vis_nav" id="main_vis_nav">
+		<div class="toggle_sort" id="toggle_sort_main">分類トグル</div>
+		<div id="main_nav_svg" class="nav_svg"></div>
+	</div>
+	<div id="main_vis">
+		<div class='loading'><img src='inc/data-loading.gif'></div>
+	</div>
+
+<div id="content_wrapper">
+	<div id="scroll_instructions"><span id="scroll_up">&uarr;</span> <i>可視化ウインドウの中でスクロールしてもっと見る</i> <span id="scroll_down">&darr;</span></div>
+	<a name="about" href=""></a>
+	<div class="page_division">広島デジタルアーカイブと被爆者の声</div>
+	<div class="content_row">
+		<div class="content_section">
+		
+			<div class="text_block">
+1945年8月6日には、アメリカ合衆国が日本広島市に原爆を投下しました。数日後、8月9日に、別の原子爆弾が長崎市に投下されました。少なくとも129,000人が直接結果に死亡して、その数年後より数千人も死亡しました。
+			</div>
+			<div class="text_block">
+		平和を得るために闘うこの世でこれらの歴史的なイベントは、戦争とその余波の残酷さと破壊を思い出す手掛かりとなります。平和と理解への道を開いて核軍縮を進めるため、<a target="_blank" href="http://hiroshima.archiving.jp/index_jp.html">広島デジタルアーカイブ</a>は原子爆弾投下を体験した被爆者の声を維持することを目指します。この可視化（ビジュアライゼーション）はそのアーカイブに維持されている声をもっと広げて人間の状態 &mdash; 空間、時間、とその中の人間文明の役割 &mdash; についての会話を開こうとします。
+			</div>
+			<div class="text_block">
+この可視化では、広島デジタルアーカイブのそれぞれの被爆者インタビュウのテキストはテーマのよって解析されました。それぞれの欄には一つのインタビューを表して、その欄の中で一つの四角形は一言を表します。この四角形は可視化の上に展示されているカテゴリ（テーマ）によって色彩が異なります。一つの四角形にマウスオーバーすればその一言が見えます。そして、四角形をクリックすれば、可視化の中で同じ一言を表す四角形がすべてハイライトされます。「分類トグル」というボタンをクリックしてすべてのインタビューは言葉のカテゴリとテーマによって分類され、その上テーマとカテゴリのラベルをクリックと可視化でそのカテゴリの言葉だけが展示されるようになります。可視化ウインドウの中でスクロールしてもっと見てみてください。			</div>
+			<div class="text_block">
+			この次、四つのテーマについて議論を含めていきます。このテーマは人間身体、空間と場所、時間、と物質世界です。
+			</div>
+			<div class="vis_nav" id="treemap_vis_nav">
+				<div class="toggle_sort" id="toggle_sort_treemap">分類トグル</div>
+				<div id="treemap_nav_svg" class="nav_svg"></div>		
+			</div>
+			<div id="treemap_vis"><div class="loading"><img src="inc/data-loading.gif"></div></div>
+			<div class="special_tk_row">
+				<div class="special_tk_descr" id="special_tk_body">
+					<div class="section_subheader">人間身体</div>
+					<div class="text_block">			広島デジタルアーカイブのインタビューはバラバラに裂けた身体の話をします。インタビュー全体にわたって、被爆者は「目」、「顔」、「声」、や「手」などの身体各部についてよく話します。この表現は原子爆弾の爆発もその余波も、両方が人間身体には影響を与えたことを表します。人間身体についての言葉がたくさんあることは人間の脆弱性を思い出す手掛かりとなります。
+					</div>
+				</div>
+				<div class="special_tk_descr" id="special_tk_space">
+					<div class="section_subheader">空間と場所</div>
+					<div class="text_block">
+意外であるわけではないかもしれないが、インタビューでは空間と場所への言及がたくさんあります。この言葉の中で、一番頻回なのは「中」、「外」、「上」、や「下」などが含まれています。このような言葉は日常的に異常ではないが原子爆弾の投下が普遍体験であったことを表します。
+					</div>
+				</div>
+			</div>
+			<div class="special_tk_row">
+				<div class="special_tk_descr" id="special_tk_time">
+					<div class="section_subheader">時間</div>
+					<div class="text_block">
+インタビューのテキストは、被爆者の記憶では広島への原爆投下が特定の箇所と時間を占めることを表します。爆発の空間広がりに加えて、「時」、「日」、と「月」がこのカテゴリの頻回な例です。
+					</div>
+				</div>
+				<div class="special_tk_descr" id="special_tk_physic">
+					<div class="section_subheader">物質世界</div>
+					<div class="text_block">
+最後は、インタビュー全体にわたって物質世界への言及が無視できないほどたっぷりあります。例えば、「原爆」、「水」、「地」、「火」、と「音」は特に頻回に現れます。もちろんこのような言葉は原爆が物質世界へ直接爆発でも、その余波でも凄まじい影響を与えたことを表します。
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<a name="data" href=""></a>
+	<div class="page_division">データ解析</div>
+	<div class="content_row">
+		<div class="content_section">
+			<div class="section_header">データについて</div>
+			<div class="text_block">
+				<a target="_blank" href="http://developer.yahoo.co.jp/webapi/jlp/ma/v1/parse.html">Yahoo! Japan Morphological Analysis (日本語形態素解析) API</a>を使ってそれぞれのインタビュー全体は個々の単語に分析されました。その後、一番頻回な単語を判断するために分析された単語の頻回が計算されました。〜300個一番頻回な単語は別のカテゴリとテーマに分類されました。このテーマは、「身体」、「時間」、「空間」、「物質世界」、「人々」、「場所」、「出来事」、「アイデア」、と「物」を含めました。
+			</div>	
+			<div class="section_header">この可視化について</div>
+			<div class="text_block">
+			この可視化では、一例は一つのインタビュー全体のテキストを表します。一例の中では、一つの四角形はそのインタビューの一つの単語を表します。四角形はテーマとカテゴリごとに色分けされています。それぞれのインタビューは、助詞や低い頻度のある単語などを除いてカテゴリに分類された単語だけが表示されています。だから、一例はインタビューの全体の単語をすべて表すわけではないところがあります。特に、頻度が300回より低い単語は表示されていません。
+			</div>	
+		</div>	
+	</div>
+	<a name="acknowledgments" href=""></a>
+	<div class="page_division">詳細について</div>	
+	<div class="content_row">
+		<div class="content_section">
+			<div class="section_header">承認と感謝</div>
+			<div class="text_block">
+			<a target="_blank" href="http://hiroshima.archiving.jp/index_jp.html">広島デジタルアーカイブ</a>は渡邉英徳 （首都大学東京システムデザイン学部准教授）の指揮下で開発されました。アーカイブについてもっと読みたい方は<a target="_blank" href="http://hiroshima.mapping.jp/index_jp.html">ここ（日本語）</a> または <a target="_blank" href="http://hiroshima.mapping.jp/index_en.html">ここ（英語・English）</a>をご覧ください.この可視化のデータ解析とデザインは<a target="_blank" href="http://www.stevengbraun.com">スティーベン・ブラン</a>に作成されました。 この可視化のオープンソースコードは<a target="_blank" href="http://www.github.com/braunsg">GitHub</a>に投稿されています。
+			</div>
+		</div>
+	</div>
+</div> <!-- end content_wrapper -->
+
+</div> <!-- end wrapper -->
